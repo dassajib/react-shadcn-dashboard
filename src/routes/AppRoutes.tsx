@@ -4,6 +4,7 @@ import { Skeleton } from "@/components/ui/skeleton"
 
 const SignUp = lazy(() => import("@/pages/SignUp"))
 const SignIn = lazy(() => import("@/pages/SignIn"))
+const CreateShop = lazy(() => import("@/pages/CreateShop"))
 const Dashboard = lazy(() => import("@/pages/Dashboard"))
 const Uom = lazy(() => import("@/pages/Uom"))
 const Categories = lazy(() => import("@/pages/Categories"))
@@ -18,6 +19,7 @@ const AppRoutes = () => {
             <Routes>
                 <Route path="/signup" element={<SignUp />} />
                 <Route path="/signin" element={<SignIn />} />
+                <Route path="/create-shop" element={<CreateShop />} />
                 {/* Layout wrapper */}
                 <Route path="/" element={<AppLayout />}>
                     <Route index element={<Dashboard />} />
