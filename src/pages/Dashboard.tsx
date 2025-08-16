@@ -1,12 +1,11 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { DollarSign } from "lucide-react"
-import AppLayout from "@/layout/AppLayout"
-import GraphOverviw from "@/components/shared/GraphOverviw"
+import GraphOverviw from "@/components/shared/GraphOverview"
 import RecentSales from "@/components/shared/RecentSales"
 
 const Dashboard = () => {
     return (
-        <AppLayout>
+        <div>
             <div className="flex justify-between items-center">
                 <h1 className="text-2xl font-bold mb-4 text-black dark:text-white">Dashboard</h1>
                 <button className="bg-black text-white dark:bg-white dark:text-black px-4 py-2 rounded-lg text-sm">Download</button>
@@ -90,7 +89,7 @@ const Dashboard = () => {
                     </CardContent>
                 </Card>
             </div>
-        </AppLayout>
+        </div>
     )
 }
 
